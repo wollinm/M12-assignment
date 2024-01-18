@@ -5,15 +5,17 @@ function Cat() {
     const myCat = new Cat()
     console.log(myCat.name)
 
-// let dog = new class {
-//     constructor(name,breed) {
-//         this.name = name
-//         this.breed = breed
-//         info = function() {console.log(` ${this.name} is a ${this.breed} `)}
-//     }('Plato','Black Lab');
-// dog.info();
-
-    
+    let dog = new class {
+        constructor(name,breed) {
+             this.name = name
+             this.breed = breed
+        }
+        info() {
+             console.log(' ${this.name} is a ${this.breed} ')
+        }
+    }('Plato','Black Lab')
+    dog.info()
+ 
 // // STEP 2
 // const cat = new Cat()
 // const dog = new dog.info()
